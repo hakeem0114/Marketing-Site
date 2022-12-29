@@ -1,0 +1,119 @@
+*{ /*Universal Selector shapes initial size of size of landing page*/
+    margin:0;
+    padding:0;
+    box-sizing:border-box; /* Accounts for paddings & borders in specifying the element's width & height*/
+}
+
+body{ /*Type selector */
+    font-family: 'Times New Roman', Times, serif; /*All text in body*/
+
+}
+
+
+header{ /*Type selector */
+
+    background-color: rgb(135, 228, 197); /* To help visualize border during design*/
+    height:140px; /* Sets a height for the header of page*/
+    
+    display:flex; /* display:flex's default is flex-direction:row; */
+                  /* Moves header's flex items to be in a row, side by side*/
+    justify-content: space-around;
+    align-items:center;
+    
+}
+
+logo{ 
+
+    display:flex;
+    margin-right: 200px;
+
+    height:70px;
+    width:70px;
+}
+
+ul{
+    display:flex;
+    list-style-type: none; /*Removed the bullet points from lists*/
+}
+
+
+ul li a{ /*Combined types selectors*/
+
+    text-decoration: none; /*Remove Underline*/
+
+    display:flex;
+    margin:20px; /* Create a 20px between the boxes*/   
+    color: white; /* Font colour = white*/ 
+}
+
+button{
+    
+    padding:10px;
+    border-radius:20px;
+    
+    font-style: oblique;
+    background-color: #47abd5;
+    color: white; /* Font colour = white*/
+    border-color: transparent;
+}
+
+a{
+    text-decoration: none;  /*Remove Underline*/
+}
+
+main{
+    height: calc(90vh - 140px); /* Max page height of 100vh - height of header (140px) = main content header*/
+    margin-top: 2.5px;  /* Space between header & main*/
+
+    background-color: rgb(220, 231, 178); /* To help visualize border during design*/
+   
+    display:flex;
+}
+
+.left-side{
+    
+    display: flex; /*flex-direction:row by default*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+p{
+    margin:20px;
+    text-align: center;
+}
+
+.right-side{
+ 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin:50px
+}
+
+
+.footer{
+    background-color: rgb(153, 197, 204);
+    height: 90px;
+
+    margin-top: 2.5px;  /* Space between main & footer*/
+}
+
+ul{
+    list-style-type: none; /*Removed the bullet points from lists*/
+
+    display:flex;
+    justify-content: space-around;
+
+    color: white; /* Font colour = white*/ 
+}
+
+
+
+
+
+
